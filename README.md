@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import trim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-trim@deno/mod.js';
+import trim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-trim@v0.0.2-deno/mod.js';
 ```
 
 #### trim( str )
@@ -80,7 +80,7 @@ var out = trim( ' \t\t\n  Beep \r\n\t  ' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import trim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-trim@deno/mod.js';
+import trim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-trim@v0.0.2-deno/mod.js';
 
 var out = trim( '   Whitespace   ' );
 // returns 'Whitespace'
