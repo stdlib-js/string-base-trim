@@ -24,19 +24,30 @@ limitations under the License.
 
 > Trim whitespace characters from the beginning and end of a string.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-base-trim
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import trim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-trim@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-base-trim/tags). For example,
-
-```javascript
-import trim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-trim@v0.0.2-esm/index.mjs';
+var trim = require( '@stdlib/string-base-trim' );
 ```
 
 #### trim( str )
@@ -84,13 +95,8 @@ var out = trim( ' \t\t\n  Beep \r\n\t  ' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import trim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-trim@esm/index.mjs';
+```javascript
+var trim = require( '@stdlib/string-base-trim' );
 
 var out = trim( '   Whitespace   ' );
 // returns 'Whitespace'
@@ -100,10 +106,6 @@ out = trim( '\t\t\tTabs\t\t\t' );
 
 out = trim( '\n\n\nNew Lines\n\n\n' );
 // returns 'New Lines'
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -127,7 +129,7 @@ out = trim( '\n\n\nNew Lines\n\n\n' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -157,8 +159,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/string-base-trim.svg
 [npm-url]: https://npmjs.org/package/@stdlib/string-base-trim
 
-[test-image]: https://github.com/stdlib-js/string-base-trim/actions/workflows/test.yml/badge.svg?branch=v0.0.2
-[test-url]: https://github.com/stdlib-js/string-base-trim/actions/workflows/test.yml?query=branch:v0.0.2
+[test-image]: https://github.com/stdlib-js/string-base-trim/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/string-base-trim/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-base-trim/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/string-base-trim?branch=main
